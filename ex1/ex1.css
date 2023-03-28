@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 120%;
+}
+
+.form{
+    width: 30%;
+    display: inline-block;
+}
+
+input,select {
+    border: 1px solid blue;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: rgb(49, 49, 49);
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px 0px;
+    color: black;
+}
+
+.username {
+    margin-bottom: 10px;
+}
+
+.username label {
+    width: 100%;
+}
+
+.username input {
+    width: 100%;
+}
+
+.password {
+    margin-bottom: 10px;
+}
+
+.password label {
+    width: 100%;
+}
+
+.password input {
+    width: 100%;
+}
+
+.email {
+    margin-bottom: 10px;
+}
+
+.email label {
+    width: 100%;
+}
+
+.email input {
+    width: 100%;
+}
+
+.sex {
+    margin-bottom: 10px;
+}
+
+input[type=radio],
+input[type=checkox] {
+    margin-right: 5px;
+}
+
+.sex label[for=male] {
+    margin-right: 20px;
+}
+
+.job {
+    margin-bottom: 10px;
+}
+
+.job label {
+    width: 100%;
+}
+
+.job select {
+    width: 100%;
+}
+
+.accept {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    margin: 20px 0px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: steelblue;
+    border-radius: 4px;
+}
+.error{
+    color: red;
+}

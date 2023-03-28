@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <link rel="stylesheet" href="ex1.css">
+</head>
+
+<body>
+    <main>
+        <h1>REGISTER FORM</h1>
+        <div class="form">
+            <div class="username">
+                <label for="username">User Name</label>
+                <input id="username" type="text" placeholder="Enter your username ...">
+                <span id="username_error" class="error"></span>
+            </div>
+            <div class="password">
+                <label for="password">Password</label>
+                <input id="password" type="text" placeholder="Enter your password ...">
+                <span id="password_error" class="error"></span>    
+            </div>
+            <div class="email">
+                <label for="email">Email Address</label>
+                <input id="email" type="text" placeholder="Enter your email ...">
+                <span id="email_error" class="error"></span>
+            </div>
+            <div class="gender">
+                <label>Gender </label>
+                <div class="gender_radio">
+                    <input type="radio" id="gender_male" name="gender" value="male" checked>
+                    <label for="gender_male">Male</label>
+                    <input type="radio" id="gender_fmale" name="gender" value="female">
+                    <label for="gender_fmale">Female</label>
+                </div>
+            </div>
+            <div class="job">
+                <label>Are you </label>
+                <div>   <select name="jobs" id="job" class="select_job">
+                        <option value="">Select your job</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Tester">Tester</option>
+                        <option value="Manager">Manager</option>
+                </select>
+                </div>
+                <span id="job_error" class="error"></span>
+            </div>
+            <div class="term">
+                <input type="checkbox" id="term" name="term" checked>
+                <label for="term" > I accept the terms and conditions</label>
+                <span id="term_error" class="error"></span>
+                </div>
+            <button type="button" onclick="submit()">Submit</button>
+        </div>
+    </main>
+    <script src="ex1.js"></script>
+</body>
