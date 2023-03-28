@@ -1,0 +1,83 @@
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;    
+}
+
+.left_chat, .right_chat{
+    width: 48%;
+    border: 1px solid;
+    height: 50vh;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.chat_txt{
+    border: 1px solid black;
+    height: 65%;
+    padding: 0 15px;
+    position: relative;
+    color: white;
+    overflow: auto;
+}
+
+.msg{
+    width: auto;
+    margin-bottom: 5px;
+    word-break: break-word;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.right_person_left_chat, .left_person_left_chat, .right_person_right_chat, .left_person_right_chat{
+    width: 100%;
+    display: table;
+}
+
+.right_msg_left_chat, .right_msg_right_chat{
+    background-color: blue;
+    float: right;
+    text-align: right;
+    margin: 10px 0;
+}
+
+.left_msg_left_chat, .left_msg_right_chat{
+    background-color: gray;
+    float: left;
+    text-align: right;
+    margin: 10px 0;
+}
+
+.btn_option{
+    font-size: 15px;
+    margin: 5px 10px;
+    padding: 5px 7px;
+    text-align: center;
+    opacity: .8;
+    border: 1px solid black;
+}
+
+.btn_option:hover{
+    background-color: black;
+    opacity: .9;
+    color: white;
+}
+
+.message{
+    display: flex;
+}
+
+textarea {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.btn_message_send{
+    width: 15%;
+    margin-left: 10px;
+    padding: 15px 0px;
+    text-align: center;
+    line-height: 220%;
+    border: 1px solid rgb(155, 154, 154);
+}

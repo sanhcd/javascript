@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+    <main class="container">
+        <div class="left_chat">
+            <div id="left_container" class="chat_txt">
+
+            </div>
+            <div class="option_and_message">
+                <div class="option">
+                    <button id="bold_left" onclick="chatBold('left')" class="btn_option">Đậm</button>
+                    <button onclick="chatItalic('left')" class="btn_option">Nghiêng</button>
+                    <button onclick="resetChat('left')" class="btn_option">Reset</button>
+                </div>
+                <div class="message">
+                    <textarea name="" id="left_text" cols="5" rows="4"></textarea>
+                    <button id="btn_send_left" onclick="btnSendLeftClick()" class="btn_message_send">SEND</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right_chat">
+            <div id="right_container" class="chat_txt">
+
+            </div>
+            <div class="option_and_message">
+                <div class="option">
+                    <button id="bold_right" onclick="chatBold('right')" class="btn_option">Đậm</button>
+                    <button onclick="chatItalic('right')" class="btn_option">Nghiêng</button>
+                    <button onclick="resetChat('right')" class="btn_option">Reset</button>
+                </div>
+                <div class="message">
+                    <textarea name="" id="right_text" cols="5" rows="4"></textarea>
+                    <button id="btn_send_right" onclick="btnSendRightClick()" class="btn_message_send">SEND</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="ex2.js"></script>
+</body>
+</html>
